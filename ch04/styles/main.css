@@ -1,0 +1,60 @@
+body{
+    font-family: Arial;
+}
+
+a{
+    font-weight: bold;
+}
+
+
+header{
+
+    img{
+        float:left;
+        margin-right: 30px;
+    }
+    h1{
+        font-size:40px;
+        color:steelblue;
+        font-style: italic;
+    
+    }
+
+}
+
+section{
+
+
+    a{
+        color: maroon;
+    }
+    a:visited{
+        color: maroon;
+    }
+    a:hover{
+        color: steelblue;
+    }
+}
+
+aside{
+    h1{
+        color: maroon;
+    }
+    ul{
+        line-height: 1.5;
+    }
+    a{
+        color:steelblue;
+    }
+    a:visited{
+        color:steelblue;
+    }
+    a:hover{
+        color:maroon;
+    }
+}
+
+footer{
+    text-align: center;
+    font-size: 15px;
+}
