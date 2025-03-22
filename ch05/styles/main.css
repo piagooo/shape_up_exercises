@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial;
+    width: 700px;
+    border-style: solid;
+    border-color: steelblue;
+    border-width: 4px;
+    box-shadow: 0px 7px 20px black, -10px 7px 20px black, 10px 7px 20px black;;
+    margin: 0 auto;
+}
+
+a{
+    font-weight: bold;
+}
+
+
+header{
+
+    img{
+        float:left;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    h1{
+        font-size:40px;
+        color:steelblue;
+        font-style: italic;
+        padding-top: .25em;
+    }
+    h3{
+        padding-bottom: 2em;
+    }
+    background: linear-gradient( white, lightsteelblue);
+    border-bottom: 4px solid steelblue;
+}
+
+section{
+
+    margin-left: 1.5em;
+
+    a{
+        color: maroon;
+    }
+    a:visited{
+        color: maroon;
+    }
+    a:hover{
+        color: steelblue;
+    }
+    h2{
+        padding-top: 1em;
+        padding-bottom: .5em;
+    }
+    h3{
+        padding-bottom: .5em;
+    }
+    p{
+        padding-bottom: 10px;
+    }
+
+}
+
+aside{
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    h1{
+        color: maroon;
+        margin-left: .5em;
+        padding-top: .5em;
+    }
+    ul{
+        line-height: 1.5;
+        margin-left: 1.5em;
+        padding-bottom: 10px;
+    }
+    a{
+        color:steelblue;
+    }
+    a:visited{
+        color:steelblue;
+    }
+    a:hover{
+        color:maroon;
+    }
+    border-style: solid;
+    border-radius: 20px;
+    border-color: steelblue;
+}
+
+footer{
+    text-align: center;
+    font-size: 15px;
+    background-color: steelblue;
+    color: white;
+    padding-top: 1.75em;
+    padding-bottom: 1em;
+}
+
+blockquote{
+    margin-left: 1.75em;
+}
