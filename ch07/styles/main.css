@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial;
+    width: 100%;
+    margin: 0 auto;
+}
+
+a{
+    font-weight: bold;
+}
+
+main{
+    display: flex;
+}
+
+header{
+
+    img{
+        float:left;
+        margin-right: 30px;
+        margin-left: 30px;
+        width:clamp(100px, 10%, 120px);
+    }
+    h1{
+        font-size:40px;
+        color:steelblue;
+        font-style: italic;
+        padding-top: .25em;
+    }
+    h3{
+        padding-bottom: 2em;
+    }
+    background: linear-gradient( white, lightsteelblue);
+    border-bottom: 4px solid steelblue;
+}
+
+section{
+
+    margin-left: 1.5em;
+    flex-basis: 75%;
+
+    a{
+        color: maroon;
+    }
+    a:visited{
+        color: maroon;
+    }
+    a:hover{
+        color: steelblue;
+    }
+    h2{
+        padding-top: 1em;
+        padding-bottom: .5em;
+    }
+    h3{
+        padding-bottom: .5em;
+    }
+    p{
+        padding-bottom: 10px;
+    }
+
+}
+
+aside{
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-top: 10px;
+    h1{
+        color: maroon;
+        margin-left: 1em;
+        padding-top: 1em;
+        padding-bottom: .25em;
+    }
+    ul{
+        line-height: 1.5;
+        margin-left: 2.5em;
+        padding-bottom: 10px;
+        padding-bottom: 2em;
+    }
+    a{
+        color:steelblue;
+    }
+    a:visited{
+        color:steelblue;
+    }
+    a:hover{
+        color:maroon;
+    }
+    flex-basis: 40%;
+}
+
+footer{
+    text-align: center;
+    font-size: 15px;
+    background-color: steelblue;
+    color: white;
+    padding-top: 1.75em;
+    padding-bottom: 1em;
+}
+
+blockquote{
+    margin-left: 1.75em;
+}
+#link{
+    border-style: solid;
+    border-radius: 20px;
+    border-color: steelblue;
+}
+.navbar{
+    position: relative;
+    height: 60px;
+    background-color: steelblue;
+    align-content: center;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    
+    li{
+        list-style-type: none;
+    }
+    a:focus{
+        border-style: solid;
+        border-color: white;
+        border-width: 2px;
+        border-radius: 10px;
+        padding: 4px;
+    }
+    a{
+        flex-basis: 20%;
+        display: block;
+        text-decoration: none;
+        color: white;
+        position: relative;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    flex-wrap: wrap;
+}
+
+.menu:has(.submenu){
+    :hover > .submenu{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.submenu{
+    display: none;
+    position: fixed;
+    background-color: steelblue;
+    li{
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    a{
+        display: block;
+        height: 50px;
+        width: 150px;  
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    li:first-child{
+        padding-top: 30px;
+    }
+}
