@@ -396,4 +396,8 @@ form{
     #reset{
         background-color: rgb(128, 33, 33);
     }
+    button:hover{
+        background-color: aliceblue;
+        color: black;
+    }
 }
