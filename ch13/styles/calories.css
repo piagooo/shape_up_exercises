@@ -1,0 +1,55 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid black;
+  }
+  
+  td, th {
+    text-align: left;
+    padding: 8px;
+  }
+
+  th{
+    background-color: steelblue;
+    color: white;
+  }
+  h1{
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(168, 50, 50);
+  }
+  
+table tr td:first-child {
+   font-weight: bold;
+}
+@media screen and (max-width: 700px) {
+  table{
+
+    td{
+      display: inline-block;
+      width: 100%;
+      padding: 0;
+      padding-left: 5px;
+    }
+    th{
+      display: none;
+    }
+    .category{
+      width: 99.5%;
+      background-color: steelblue;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      padding-right: 0px;
+    }
+    tr td:nth-child(2) {
+      font-weight: bold;
+   }
+  }
+  aside{
+    display: none;
+  }
+  section{
+    flex-basis: 93%;
+  }
+}
