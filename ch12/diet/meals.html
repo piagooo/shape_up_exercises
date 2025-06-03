@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shape Up! | Meal Plan</title>
+	<link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body>
+	<header>
+		<img src="../images/shape_up_logo.png" alt="Shape Up Logo">
+		<h1>Shape Up!</h1>
+	
+		<h3>Find the best fit for you</h3>
+	</header>
+	<nav class="navbar">
+		<input type="checkbox" id="menu-btn">
+		<span></span>
+		<span></span>
+		<span></span>
+		<ul class="menu">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../strength/strength.html">Strength Training</a></li>
+			<li><a href="../cardio/cardio.html">Cardio Exercises</a></li>
+			<li>
+				<a href="../stress/stress.html">Stress Relief <small class="down">&#9660;</small><small class="side">&#9654;</small></a>
+				<ul class="submenu">
+					<li><a href="../stress/stress.html">What is Stress</a></li>
+					<li><a href="../stress/tips.html">5 Helpful Tips</a></li>
+					<li><a href="../stress/meditate.html">Meditation</a></li>
+					<li><a href="../stress/vipassana.html">Vipassana</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="../diet/diet.html">Healthy Diets <small class="down">&#9660;</small><small class="side">&#9654;</small></a>
+					<ul class="submenu">
+						<li><a href="../diet/bmi.html">Calculate Your BMI</a></li>
+						<li><a href="../diet/calories.html">Count Your Calories</a></li>
+						<li><a href="../diet/diet.html">Why a Healthy Diet?</a></li>
+						<li><a href="../diet/meal_request.html">Request a Meal</a></li>
+						<li><a href="../diet/meals.html">Plan Your Meals</a></li>
+					</ul>
+				</li>
+		</ul>
+	</nav>
+	<main>
+		<section>
+			<h1>Meal Plan Order Form</h1>
+		<p>
+			Fill out the form as completely as possible and we will email you a weekly meal plan, customized
+			for you--your lifestyle, your goals, and your personal needs.
+			<br>
+			<br>
+			Asterisks (*) indicate required entries.
+		</p>
+
+				
+		<form method="get">
+			<fieldset class="you">
+				<legend>Tell us about yourself</legend>
+
+
+				<label for="full_name">Full name *</label>
+				<input type="text" name="full_name" id="full_name" required>
+
+				<label for="email">Email *</label>
+				<input type="email" name="email" id="email" required>
+
+				<label for="gender">Gender *</label>
+				<select name="gender" id="gender" required>
+					<option value="null">Select a gender</option>
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+					<option value="non-binary">Non-Binary</option>
+					<option value="other">Other</option>
+				</select>
+
+				<label for="height">Height *</label>
+				<input type="text" name="height" placeholder="Example: 5ft, 6in" required>
+
+				<label for="weight">Weight *</label>
+				<input type="text" name="weight" placeholder="Example: 145lbs" required>
+
+				<label for="age">Age</label>
+				<select name="age">
+					<option>Select your age</option>
+					<option>under 18</option>
+					<option>18-34</option>
+					<option>35-44</option>
+					<option>50-69</option>
+					<option>70+</option>
+				</select>
+			</fieldset>
+			<fieldset>
+				<legend>Lifestyle and goals</legend>
+
+
+				<label for="lifestyle">Which currently matches your present lifestyle?</label>
+				
+				<input type="radio" name="lifestyle" value="active">
+				<label class="check" for="active">Active</label>
+
+				<input type="radio" name="lifestyle" value="moderate">
+				<label class="check" for="moderate">Moderate</label>
+
+				<input type="radio" name="lifestyle" value="sedentary">
+				<label class="check" for="sedentary">Sedentary</label>
+
+
+
+
+				<label for="goals">What are your weight goals</label>
+			
+				<input type="radio" name="goals" value="gain">
+				<label class="check" for="gain">Gain</label>
+
+				<input type="radio" name="goals" value="lose">
+				<label class="check" for="lose">Lost</label>
+
+				<input type="radio" name="goals" value="maintain">
+				<label class="check" for="maintain">Maintain</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Food preferences and restrictions</legend>
+				<label for="question">Do you have any dietary restrictions? (select all that apply)</label>
+
+				<input type="checkbox" name="vegetarian">
+				<label class="check" for="vegetarian">Vegetarian</label>
+
+				<input type="checkbox" name="gluten">
+				<label class="check" for="gluten">Gluten-free</label>
+
+				<input type="checkbox" name="halal">
+				<label class="check" for="halal">Halal</label>
+
+				<input type="checkbox" name="salt">
+				<label class="check" for="salt">Low salt</label>
+
+				<input type="checkbox" name="other">
+				<label class="check" for="other">Other, please explain:</label>
+				<textarea></textarea>
+			</fieldset>
+
+			<button id="submit" type="submit">Submit</button>
+			<button id="reset" type="reset">Reset</button>
+		</form>
+		</section>
+
+		<aside>
+			<div id="link">
+				<h1>Additional resources</h1>
+
+				<ul>
+					<li>
+						<img class="aside-icon" src="../images/run-icon.png"> <a href="https://www.cdc.gov/physical-activity-basics/benefits/index.html">Physical activity and health</a>
+					</li>
+		
+					<li>
+						<img class="aside-icon" src="../images/stretch-icon.png"> <a href="https://www.heart.org/en/healthy-living/fitness/fitness-basics/flexibility-exercise-stretching">Stretching exercises</a>
+					</li>
+				
+					<li>
+						<img class="aside-icon" src="../images/strength-icon.png"> <a href="https://www.heart.org/en/healthy-living/fitness/fitness-basics/strength-and-resistance-training-exercise">Strength training </a>
+					</li>
+					<li>
+						<img class="aside-icon" src="../images/cardio-icon.png"> <a href="https://www.health.harvard.edu/exercise-and-fitness/interval-training-for-a-stronger-heart">Cardiovascular training</a>
+					</li>
+					<li>
+						<img class="aside-icon" src="../images/yoga-icon.png"> <a href="https://www.self.com/gallery/power-yoga-workout">Yoga workout</a>
+					</li>
+		
+				</ul>
+			</div>
+		</aside>
+	    
+	</main>
+</body>
+</html>
